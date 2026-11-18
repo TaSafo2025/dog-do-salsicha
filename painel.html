@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Painel da loja · Dog do Salsicha</title>
+  <meta name="description" content="Painel de gestão do Dog do Salsicha: pedidos, cozinha, cardápio, estoque, financeiro, caixa, clientes e WhatsApp.">
+  <meta name="theme-color" content="#1C1412">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/painel.css">
+</head>
+<body>
+  <a class="skip" href="#view">Pular para o conteúdo</a>
+  <div class="app" id="app">
+    <aside class="side" id="side" aria-label="Menu do painel"></aside>
+    <div class="main">
+      <header class="top" id="top"></header>
+      <main class="view" id="view" tabindex="-1"></main>
+      <footer class="demo-foot" role="note">Demonstração — valores de custo são estimativas</footer>
+    </div>
+    <nav class="bottom" id="bottom" aria-label="Navegação principal"></nav>
+  </div>
+  <div id="print-area" aria-hidden="true"></div>
+  <script src="data/menu.js"></script>
+  <script type="module" src="assets/js/painel/app.js"></script>
+</body>
+</html>

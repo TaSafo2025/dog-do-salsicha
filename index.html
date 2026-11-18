@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dog do Salsicha</title>
+  <meta name="description" content="Cardápio e pedidos online do Dog do Salsicha — o melhor dog prensado da cidade, em Samambaia Sul, Brasília/DF. Entrega, retirada e consumo no local.">
+  <meta name="theme-color" content="#140E0C">
+  <link rel="icon" href="assets/img/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Geist:wght@400..700&family=Geist+Mono:wght@400;600&display=swap">
+  <link rel="preload" as="image" href="assets/img/hero.webp">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#cardapio">Pular para o cardápio</a>
+
+  <header class="cover" id="capa" aria-label="Dog do Salsicha">
+    <div class="wrap cover-grid cover-skel" aria-hidden="true"><div class="sk sk-photo"></div><div><div class="sk sk-line"></div><div class="sk sk-line sk-short"></div></div></div>
+  </header>
+  <section class="closed" id="closedBanner" aria-live="polite" hidden></section>
+  <section class="combos" id="combosStrip" aria-label="Combos em destaque"></section>
+
+  <div class="layout wrap">
+    <main id="cardapio" class="menu" tabindex="-1">
+      <nav class="catbar" id="catbar" aria-label="Categorias do cardápio"></nav>
+      <section id="results" class="sec results" aria-live="polite" hidden></section>
+      <div id="sections"></div>
+    </main>
+    <aside class="bag-aside" id="bagAside" aria-labelledby="bag-title"></aside>
+  </div>
+
+  <footer class="foot" id="rodape"></footer>
+
+  <button class="bagbar" id="bagBar" type="button" hidden></button>
+  <button class="track-badge" id="trackBadge" type="button" hidden></button>
+
+  <dialog class="sheet sheet--product" id="productDialog"></dialog>
+  <dialog class="sheet sheet--bag" id="bagDialog"></dialog>
+  <dialog class="sheet sheet--full" id="checkoutDialog"></dialog>
+  <dialog class="sheet sheet--full sheet--track" id="trackDialog"></dialog>
+  <dialog class="sheet sheet--mini" id="hoursDialog"></dialog>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <noscript><p class="noscript">Ative o JavaScript para ver o cardápio e fazer seu pedido. Ou chame no WhatsApp: (61) 99882-6477.</p></noscript>
+  <script src="data/menu.js"></script>
+  <script type="module" src="assets/js/site/app.js"></script>
+</body>
+</html>
